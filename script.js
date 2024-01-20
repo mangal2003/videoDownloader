@@ -48,6 +48,4 @@ function download() {
   setTimeout(() => {
     notify.style.display = "none";
   }, 1700);
-  btn2.style.display = "none";
-  downloadBtn.style.display = "block";
 }

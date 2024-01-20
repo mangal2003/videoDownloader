@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(40deg, #fff, #e2e6ff, #bdb7e1, #bda9d6, #c5a4ee);
+}
+#title {
+  font-family: "Righteous", sans-serif;
+  font-size: 1.5rem;
+  margin: 0.5rem auto;
+  background: linear-gradient(40deg, #fff, #ffe2e2, #e1b7b7, #d6a9a9, #efa3a3);
+  padding: 0.3rem 1rem;
+  border: 2px solid coral;
+  border-radius: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  width: 90vw;
+  max-width: 20rem;
+}
+#urlVideo {
+  width: 80vw;
+  max-width: 20rem;
+  padding: 0.3rem 1rem;
+  margin: 0.5rem auto;
+  border: 1.5px solid rgb(1, 1, 1);
+  border-radius: 0.4rem;
+  font-size: 1rem;
+}
+button {
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  margin: 0.5rem auto;
+  font-weight: bold;
+  background-color: #15ff00;
+  border: 2px solid gold;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+.circle {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 0.1rem;
+  display: inline-block;
+}
+#circle1 {
+  animation: loader 1.2s ease-in-out infinite;
+}
+#circle2 {
+  animation: loader 1.2s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+#circle3 {
+  animation: loader 1.2s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+#circle4 {
+  animation: loader 1.2s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+#circle5 {
+  animation: loader 1.2s ease-in-out infinite;
+  animation-delay: 0.8s;
+}
+
+@keyframes loader {
+  0%,
+  100% {
+    transform: scale(0.7);
+  }
+  25% {
+    transform: scale(1.3);
+    background-color: rgb(0, 0, 0);
+  }
+  50% {
+    transform: scale(0.7);
+    background-color: rgb(255, 255, 255);
+  }
+  75% {
+    transform: scale(0.1);
+    background-color: rgb(0, 0, 0);
+  }
+}
+#animationLoading {
+  display: none;
+}
+
+#videoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80vw;
+  max-width: 13rem;
+  margin: 0.4rem auto;
+  overflow: hidden;
+  display: none;
+}
+#titleVideo {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  word-wrap: normal;
+}
+#video {
+  border: 2px solid black;
+  height: 45vh;
+  width: 80%;
+}
+
+#notify {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00ff15;
+  padding: 0.5rem 1rem;
+  font-weight: bolder;
+  width: 100vw;
+  display: none;
+}
